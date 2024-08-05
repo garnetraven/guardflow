@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Safety Check</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 10px;
+      width: 200px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .status {
+      text-align: center;
+      font-size: 16px;
+      margin: 20px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .status.safe {
+      color: green;
+      border: 1px solid green;
+      background-color: #e7f5e7;
+    }
+    .status.malicious {
+      color: red;
+      border: 1px solid red;
+      background-color: #f5e7e7;
+    }
+    .report {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .report button {
+      padding: 5px 10px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .report button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Website Safety Check</h2>
+  </div>
+  <div id="status" class="status">Loading...</div>
+  <div class="report">
+    <button id="reportButton">Report Issue</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
